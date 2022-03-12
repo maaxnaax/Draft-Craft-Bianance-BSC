@@ -7,7 +7,7 @@ Order of Operations for Deployment:
 3. Fund the subscription with Link Token.
 4. In VRFMintTeam.sol, adjust variables: link, vrfCoordinator and keyHash, to match: Link Token Address, VRF Coordinator address and Key hash, for the chosen network on https://vrf.chain.link/chapel.
 5. Deploy VRFMintTeam.sol with id (from step 2) as constructor arg. Record address.
-6. Register address (from step 5) on https://vrf.chain.link/chapel/ + id by clicking add consumer and filling in the address.
+6. Register address (from step 5) on https://vrf.chain.link/chapel/ + id by clicking add consumer and filling in the details.
 
 Fucntionality:
 - VRFMintTeam.sol is to be accessed using js frontend.  One can generate a random list of candidate football players using VRF, then select a subset to be minted and mint the team.  80% of minting cost goes to a prize pool called Pot.
