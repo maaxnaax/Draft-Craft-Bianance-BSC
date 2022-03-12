@@ -2,7 +2,7 @@
 A fantasy Football draft game, with a crypto prize pool and distribution mechanics.  Similar to FIFA Fut Draft, but instead minting TEAM NFTs which are tied to the real world performance of players.
 
 Order of Operations for Deployment:
-1. In MetaMask, switch to desired blockchain (BSC Mainnet, BSC Testnet, Eth mainnet, Rinkeby)
+1. In MetaMask, switch to desired network (BSC Mainnet, BSC Testnet, Eth mainnet, Rinkeby)
 2. Create a subscription on https://vrf.chain.link/chapel, and record subscription id (id = 188 for current deployment on BSC Testnet).
 3. Fund the subscription with Link Token.
 4. In VRFMintTeam.sol, adjust variables: link, vrfCoordinator and keyHash, to match: Link Token Address, VRF Coordinator address and Key hash, for the chosen network on https://vrf.chain.link/chapel.
