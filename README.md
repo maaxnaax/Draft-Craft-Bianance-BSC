@@ -4,16 +4,16 @@ A fantasy Football draft game, with a crypto prize pool and distribution mechani
 Order of Operations for Deployment:
 1. In MetaMask, switch to desired blockchain (BSC Mainnet, BSC Testnet, Eth mainnet, Rinkeby)
 2. Create a subscription on https://vrf.chain.link/chapel, and record subscription id (id = 188 for current deployment on BSC Testnet).
-3. Funcd the subscription with Link Token.
-4. In VRFMintTeam.sol, adjust address variables: link, vrfCoordinator and keyHash, to match addresses: Link Token Address, VRF Coordinator address and Key hash, for the chosen network on https://vrf.chain.link/chapel.
+3. Fund the subscription with Link Token.
+4. In VRFMintTeam.sol, adjust variables: link, vrfCoordinator and keyHash, to match: Link Token Address, VRF Coordinator address and Key hash, for the chosen network on https://vrf.chain.link/chapel.
 5. Deploy VRFMintTeam.sol with id (from step 2) as constructor arg. Record address.
 6. Register address (from step 5) on https://vrf.chain.link/chapel/ + id by clicking add consumer and filling in the address.
 
 Fucntionality:
-- VRFMintTeam.sol is to be accessed using js frontend.  One can geenrate random players using VRF, then select a subset to be minted and mint the team.
+- VRFMintTeam.sol is to be accessed using js frontend.  One can generate a random list of candidate football players using VRF, then select a subset to be minted and mint the team.  80% of minting cost goes to a prize pool called Pot.
 - Payments.sol distributes pot to users who have won.
-- UsePayments fills the pot.
+- UsePayments.sol fills the pot.
 
 TODO:
-- Make method so that UsePayemts contract can deploy an instance of Payments with pot distributions once winners have been confirmed.
-- https://docs.openzeppelin.com/defender/guide-upgrades
+- Make method so that UsePayemts contract can deploy an instance of Payments with pot distributions arrays once winners have been confirmed.
+- Multisig for upgrades https://docs.openzeppelin.com/defender/guide-upgrades
