@@ -8,3 +8,4 @@ Similar to FIFA Fut Draft, but instead minting TEAM NFTs which are tied to the r
 
 TODO:
 - Make method so that UsePayemts contract can deploy an instance of Payments with pot distributions once winners have been confirmed.
+- https://docs.openzeppelin.com/defender/guide-upgrades
