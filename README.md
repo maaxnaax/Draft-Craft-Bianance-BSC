@@ -1,5 +1,5 @@
 # Draft-Craft-Bianance-BSC-
-Similar to FIFA Fut Draft, but instead minting TEAM NFTs which are tied to the real world performance of players.
+A fantasy Football draft game, with a crypto prize pool and distribution mechanics.  Similar to FIFA Fut Draft, but instead minting TEAM NFTs which are tied to the real world performance of players.
 
 Order of Operations for Deployment:
 1. In MetaMask, switch to desired blockchain (BSC Mainnet, BSC Testnet, Eth mainnet, Rinkeby)
