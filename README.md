@@ -2,7 +2,7 @@
 Similar to FIFA Fut Draft, but instead minting TEAM NFTs which are tied to the real world performance of players.
 
 
-- VRFMintTeam.sol is to be accesed using js frontend.  One can geenrate random players using VRF, then select a subset to be minted and mint the team.
+- VRFMintTeam.sol is to be accessed using js frontend.  One can geenrate random players using VRF, then select a subset to be minted and mint the team.
 - Payments.sol distributes pot to users who have won..
 - UsePayments fills the pot
 
