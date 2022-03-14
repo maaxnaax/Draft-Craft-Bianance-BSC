@@ -11,9 +11,9 @@ Order of Operations for Deployment:
 
 Fucntionality:
 - VRFMintTeam.sol is to be accessed using js frontend.  One can generate a random list of candidate football players using VRF, then select a subset to be minted and mint the team.  80% of minting cost goes to a prize pool called Pot.
-- Payments.sol distributes pot to users who have won.
 - UsePayments.sol fills the pot.
 - Withdrawing using Payments contract in Payments.sol makes use of the safe withdrawl pattern from Openzeppelin, so that no re-entrancy attacks can occur.
+- Payments.sol distributes pot to users who have won.
 
 TODO:
 - Make method so that UsePayemts contract can deploy an instance of Payments with pot distributions arrays once winners have been confirmed.
