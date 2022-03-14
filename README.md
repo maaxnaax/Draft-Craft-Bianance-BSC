@@ -17,4 +17,5 @@ Fucntionality:
 
 TODO:
 - Make method so that UsePayemts contract can deploy an instance of Payments with pot distributions arrays once winners have been confirmed.
+- Use noReentrant modifier on all mint related functions. https://docs.openzeppelin.com/contracts/4.x/api/security
 - Multisig for upgrades https://docs.openzeppelin.com/defender/guide-upgrades
